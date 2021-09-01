@@ -2,7 +2,7 @@ Correvate Test
 
 Follow this process carefully
 
-Clone the project aand type this maven command:``` mvn clean package ```
+Clone the project and type this maven command:``` mvn clean package ```
 
 This will generate the jar file inside the target folder
 

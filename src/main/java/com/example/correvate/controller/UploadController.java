@@ -4,6 +4,7 @@ package com.example.correvate.controller;
 import com.example.correvate.message.ResponseMessage;
 import com.example.correvate.service.FilesStorageService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -22,7 +23,7 @@ import static com.example.correvate.service.FilesStorageServiceImpl.zipoutputnow
 @RequiredArgsConstructor
 public class UploadController {
 
-  private FilesStorageService storageService;
+  private final FilesStorageService storageService;
 
 
   @PostMapping(value = "/upload")
