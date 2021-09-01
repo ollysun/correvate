@@ -2,20 +2,19 @@ Correvate Test
 
 Follow this process carefully
 
-Clone the project and type
-##mvn clean package
+Clone the project aand type this maben command: **mvn clean package**
 
 This will generate the jar file inside the target folder
 
 Build the dockerfile with this command
 
-##docker build --tag=correvate:latest .
+__docker build --tag=correvate:latest .__
 
 Check the image using: docker image ls
 
 Run the project with this command. 
 
-##docker run -p8090:8080 correvate:latest
+__docker run -p8090:8080 correvate:latest__
 
 Then you can test the project on postman or any other tools.
 
